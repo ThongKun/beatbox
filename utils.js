@@ -4,6 +4,14 @@
  * HINT: Create a play function to play the audio if called 
  */
 class Beat {
+    constructor(audioSrc) {
+        this.audioSrc = audioSrc
+    }
+
+    play = () => {
+        let audio = new Audio(this.audioSrc);
+        audio.play()
+    }
 }
 
 
